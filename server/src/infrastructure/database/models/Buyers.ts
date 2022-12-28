@@ -36,79 +36,79 @@ SequelizeBuyers.init({
     autoIncrement: true,
   },
   name: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: false,
   },
   tradingName: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   cashforceTax: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   responsibleName: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   responsibleEmail: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   responsiblePosition: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   responsiblePhone: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   responsibleMobile: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   website: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   postalCode: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   address: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   number: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   complement: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   neighborhood: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   city: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   state: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   phoneNumber: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   situation: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   situationDate: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
   cnpjId: {
@@ -120,7 +120,7 @@ SequelizeBuyers.init({
     allowNull: true,
   },
   email: {
-    type: DataTypes.STRING(255),
+    type: DataTypes.STRING,
     allowNull: true,
   },
 }, {
