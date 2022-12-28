@@ -1,4 +1,4 @@
-export interface IOrderspotions {
+export interface IOrderportions {
 	id: number,
 	nDup: string,
 	dVenc: string,
