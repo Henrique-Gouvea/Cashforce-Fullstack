@@ -1,4 +1,5 @@
 export interface IBuyers {
+    id: number,
     name: string,
     tradingName: string,
     cashforceTax: string,
