@@ -19,6 +19,7 @@ export interface IProviders {
   bank: string,
   bankAgency: string,
   account: string,
+  documents: string,
   phoneNumber: string,
   situation: string,
   situationDate: string,
