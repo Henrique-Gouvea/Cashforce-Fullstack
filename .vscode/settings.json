@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "Application",
         "Database",
-        "Models"
+        "Models",
+        "Interfaces"
     ]
 }
