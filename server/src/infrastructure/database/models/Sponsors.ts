@@ -140,4 +140,4 @@ SequelizeSponsors.init({
   tableName: 'sponsors'
 })
 
-SequelizeSponsors.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId' });
+SequelizeSponsors.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId', as: 'cnpj' });

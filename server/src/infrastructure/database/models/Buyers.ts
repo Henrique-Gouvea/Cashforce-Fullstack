@@ -131,4 +131,4 @@ SequelizeBuyers.init({
   tableName: 'buyers'
 })
 
-SequelizeBuyers.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId' });
+SequelizeBuyers.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId', as: 'cnpj' });

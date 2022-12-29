@@ -73,5 +73,5 @@ SequelizeOffers.init({
   tableName: 'offers'
 })
 
-SequelizeOffers.belongsTo(SequelizeSponsors, { foreignKey: 'sponsorId' });
-SequelizeOffers.belongsTo(SequelizeOrders, { foreignKey: 'orderId' });
+SequelizeOffers.belongsTo(SequelizeSponsors, { foreignKey: 'sponsorId', as: 'sponsor' });
+SequelizeOffers.belongsTo(SequelizeOrders, { foreignKey: 'orderId', as: 'order' });

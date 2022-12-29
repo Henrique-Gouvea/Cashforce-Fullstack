@@ -129,7 +129,7 @@ SequelizeOrders.init({
   tableName: 'orders'
 })
 
-SequelizeOrders.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId' });
-SequelizeOrders.belongsTo(SequelizeUsers, { foreignKey: 'userId' });
-SequelizeOrders.belongsTo(SequelizeBuyers, { foreignKey: 'buyerId' });
-SequelizeOrders.belongsTo(SequelizeProviders, { foreignKey: 'providerId' });
+SequelizeOrders.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId', as: 'cnpj' });
+SequelizeOrders.belongsTo(SequelizeUsers, { foreignKey: 'userId', as: 'user' });
+SequelizeOrders.belongsTo(SequelizeBuyers, { foreignKey: 'buyerId', as: 'buyer' });
+SequelizeOrders.belongsTo(SequelizeProviders, { foreignKey: 'providerId', as: 'provider' });

@@ -144,4 +144,4 @@ SequelizeProviders.init({
   tableName: 'providers'
 })
 
-SequelizeProviders.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId' });
+SequelizeProviders.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId', as: 'cnpj' });

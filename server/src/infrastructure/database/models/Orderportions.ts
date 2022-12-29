@@ -46,4 +46,4 @@ SequelizeOrderportions.init({
   tableName: 'orderportions'
 })
 
-SequelizeOrderportions.belongsTo(SequelizeOrders, { foreignKey: 'orderId' });
+SequelizeOrderportions.belongsTo(SequelizeOrders, { foreignKey: 'orderId', as: 'order' });
