@@ -2,30 +2,30 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('orders', {
       id: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false,
         autoIncrement: true,
       },
       nDup: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       dVenc: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       vDup: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       availableToMarket: {
-        type: DataTypes.TINYINT,
+        type: Sequelize.TINYINT,
         allowNull: true,
         defaultValue: 1,
       },
       orderId: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         allowNull: true,
         references: {
           model: 'Orders',

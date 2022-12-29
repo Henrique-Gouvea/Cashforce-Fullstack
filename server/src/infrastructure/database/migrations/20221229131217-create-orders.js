@@ -2,61 +2,61 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('orders', {
       id: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false,
         autoIncrement: true,
       },
       orderNfId: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
         unique: true,
       },
       orderNumber: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       orderPath: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
         unique: true,
       },
       orderFileName: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
         unique: true,
       },
       orderOriginalName: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
         unique: true,
       },
       emissionDate: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
       },
       pdfFile: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
       },
       emitedTo: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       nNf: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
       },
       CTE: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
       },
       value: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
       },
       cnpjId: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         allowNull: true,
         references: {
           model: 'Cnpjs',
@@ -65,7 +65,7 @@ module.exports = {
         onUpdate: 'CASCADE'
       },
       userId: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         allowNull: true,
         references: {
           model: 'Users',
@@ -74,7 +74,7 @@ module.exports = {
         onUpdate: 'CASCADE'
       },
       buyerId: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         allowNull: true,
         references: {
           model: 'Buyers',
@@ -83,7 +83,7 @@ module.exports = {
         onUpdate: 'CASCADE'
       },
       providerId: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         allowNull: true,
         references: {
           model: 'Providers',
@@ -92,25 +92,25 @@ module.exports = {
         onUpdate: 'CASCADE'
       },
       orderStatusBuyer: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
         defaultValue: 0,
       },
       orderStatusProvider: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
         defaultValue: 0,
       },
       deliveryReceipt: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
       },
       cargoPackingList: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
       },
       deliveryCtrc: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true,
       },
       createdAt: {
