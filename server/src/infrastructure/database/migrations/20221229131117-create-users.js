@@ -37,7 +37,7 @@ module.exports = {
         allowNull: true,
       },
       cashforceAdm: {
-        type: Sequelize.TINYINT,
+        type: Sequelize.BOOLEAN,
         allowNull: true,
         defaultValue: 0,
       },

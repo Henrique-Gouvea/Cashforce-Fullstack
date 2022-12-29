@@ -93,7 +93,7 @@ module.exports = {
         onUpdate: 'CASCADE'
       },
       confirm: {
-        type: Sequelize.TINYINT,
+        type: Sequelize.BOOLEAN,
         allowNull: true,
         defaultValue: 1,
       },

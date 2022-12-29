@@ -50,12 +50,12 @@ SequelizeOffers.init({
     allowNull: false,
   },
   paymentStatusSponsor: {
-    type: DataTypes.TINYINT,
+    type: DataTypes.BOOLEAN,
     allowNull: true,
     defaultValue: 0,
   },
   paymentStatusProvider: {
-    type: DataTypes.TINYINT,
+    type: DataTypes.BOOLEAN,
     allowNull: true,
     defaultValue: 0,
   },

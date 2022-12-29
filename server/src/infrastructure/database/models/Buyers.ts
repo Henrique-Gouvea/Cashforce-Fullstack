@@ -117,7 +117,7 @@ SequelizeBuyers.init({
     allowNull: true,
   },
   confirm: {
-    type: DataTypes.TINYINT,
+    type: DataTypes.BOOLEAN,
     allowNull: true,
     defaultValue: 1,
   },

@@ -32,7 +32,7 @@ SequelizeOrderportions.init({
     allowNull: false,
   },
   availableToMarket: {
-    type: DataTypes.TINYINT,
+    type: DataTypes.BOOLEAN,
     allowNull: true,
     defaultValue: 1,
   },
