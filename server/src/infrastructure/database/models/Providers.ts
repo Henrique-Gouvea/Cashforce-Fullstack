@@ -1,8 +1,9 @@
 import { DataTypes, Model } from "sequelize";
 import sequelize from "./index";
 import { IProviders } from "../../interfaces/database/IProviders";
+import { SequelizeCnpjs } from "./Cnpjs";
 
-export class sequelizeProviders extends Model<IProviders> {
+export class SequelizeProviders extends Model<IProviders> {
   declare id: number;
   declare name: string;
   declare tradingName: string;
@@ -30,7 +31,7 @@ export class sequelizeProviders extends Model<IProviders> {
   declare email: string;
 }
 
-sequelizeProviders.init({
+SequelizeProviders.init({
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -142,3 +143,5 @@ sequelizeProviders.init({
   timestamps: true,
   tableName: 'providers'
 })
+
+SequelizeProviders.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId' });

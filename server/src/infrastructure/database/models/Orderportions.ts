@@ -1,6 +1,7 @@
 import { DataTypes, Model } from "sequelize";
 import sequelize from "./index";
 import { IOrderportions } from "../../interfaces/database/IOrderportions";
+import { SequelizeOrders } from "./Orders";
 
 export class SequelizeOrderportions extends Model<IOrderportions> {
   declare id: number;
@@ -43,3 +44,5 @@ SequelizeOrderportions.init({
   timestamps: true,
   tableName: 'orderportions'
 })
+
+SequelizeOrderportions.belongsTo(SequelizeOrders, { foreignKey: 'orderId' });

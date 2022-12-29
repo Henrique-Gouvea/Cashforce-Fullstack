@@ -1,8 +1,12 @@
 import { DataTypes, Model } from "sequelize";
 import sequelize from "./index";
 import { IOrders } from "../../interfaces/database/IOrders";
+import { SequelizeCnpjs } from "./Cnpjs";
+import { SequelizeUsers } from "./Users";
+import { SequelizeBuyers } from "./Buyers";
+import { SequelizeProviders } from "./Providers";
 
-export class sequelizeOrders extends Model<IOrders> {
+export class SequelizeOrders extends Model<IOrders> {
   declare id: number;
   declare orderNfId: string;
   declare orderNumber: string;
@@ -26,7 +30,7 @@ export class sequelizeOrders extends Model<IOrders> {
   declare deliveryCtrc: string;
 }
 
-sequelizeOrders.init({
+SequelizeOrders.init({
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -118,3 +122,8 @@ sequelizeOrders.init({
   timestamps: true,
   tableName: 'orders'
 })
+
+SequelizeOrders.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId' });
+SequelizeOrders.belongsTo(SequelizeUsers, { foreignKey: 'userId' });
+SequelizeOrders.belongsTo(SequelizeBuyers, { foreignKey: 'buyerId' });
+SequelizeOrders.belongsTo(SequelizeProviders, { foreignKey: 'providerId' });

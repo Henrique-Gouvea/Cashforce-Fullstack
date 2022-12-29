@@ -1,6 +1,7 @@
 import { DataTypes, Model } from "sequelize";
 import sequelize from "./index";
 import { IBuyers } from "../../interfaces/database/IBuyers";
+import { SequelizeCnpjs } from "./Cnpjs";
 
 export class SequelizeBuyers extends Model<IBuyers> {
   declare id: number;
@@ -128,3 +129,5 @@ SequelizeBuyers.init({
   timestamps: true,
   tableName: 'buyers'
 })
+
+SequelizeBuyers.belongsTo(SequelizeCnpjs, { foreignKey: 'cnpjId' });

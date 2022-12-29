@@ -1,6 +1,8 @@
 import { DataTypes, Model } from "sequelize";
 import sequelize from "./index";
 import { IOffers } from "../../interfaces/database/IOffers";
+import { SequelizeSponsors } from "./Sponsors";
+import { SequelizeOrders } from "./Orders";
 
 export class SequelizeOffers extends Model<IOffers> {
   declare id: number;
@@ -68,3 +70,6 @@ SequelizeOffers.init({
   timestamps: true,
   tableName: 'offers'
 })
+
+SequelizeOffers.belongsTo(SequelizeSponsors, { foreignKey: 'sponsorId' });
+SequelizeOffers.belongsTo(SequelizeOrders, { foreignKey: 'orderId' });
