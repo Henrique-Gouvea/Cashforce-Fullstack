@@ -25,6 +25,6 @@ SequelizeCnpjs.init({
   },
 }, {
   sequelize,
-  timestamps: false,
+  timestamps: true,
   tableName: 'cnpjs'
 })
