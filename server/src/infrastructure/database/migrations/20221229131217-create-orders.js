@@ -58,18 +58,38 @@ module.exports = {
       cnpjId: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+          model: 'Cnpjs',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE'
       },
       userId: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+          model: 'Users',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE'
       },
       buyerId: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+          model: 'Buyers',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE'
       },
       providerId: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+          model: 'Providers',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE'
       },
       orderStatusBuyer: {
         type: DataTypes.STRING,

@@ -86,6 +86,11 @@ module.exports = {
       cnpjId: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+          model: 'Cnpjs',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE'
       },
       confirm: {
         type: DataTypes.TINYINT,

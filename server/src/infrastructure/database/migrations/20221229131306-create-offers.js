@@ -44,10 +44,20 @@ module.exports = {
       orderId: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+          model: 'Orders',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE'
       },
       sponsorId: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+          model: 'Sponsors',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE'
       },
       createdAt: {
         type: Sequelize.DATE,
