@@ -53,6 +53,7 @@ SequelizeUsers.init({
   cashforceAdm: {
     type: DataTypes.TINYINT,
     allowNull: true,
+    defaultValue: 0,
   },
 }, {
   sequelize,

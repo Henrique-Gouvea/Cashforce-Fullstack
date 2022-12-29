@@ -34,10 +34,12 @@ module.exports = {
       paymentStatusSponsor: {
         type: DataTypes.TINYINT,
         allowNull: true,
+        defaultValue: 0,
       },
       paymentStatusProvider: {
         type: DataTypes.TINYINT,
         allowNull: true,
+        defaultValue: 0,
       },
       orderId: {
         type: DataTypes.INTEGER,

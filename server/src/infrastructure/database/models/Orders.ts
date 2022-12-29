@@ -100,10 +100,12 @@ SequelizeOrders.init({
   orderStatusBuyer: {
     type: DataTypes.STRING,
     allowNull: true,
+    defaultValue: 0,
   },
   orderStatusProvider: {
     type: DataTypes.STRING,
     allowNull: true,
+    defaultValue: 0,
   },
   deliveryReceipt: {
     type: DataTypes.STRING,

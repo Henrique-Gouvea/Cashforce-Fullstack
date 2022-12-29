@@ -39,6 +39,7 @@ module.exports = {
       cashforceAdm: {
         type: DataTypes.TINYINT,
         allowNull: true,
+        defaultValue: 0,
       },
       createdAt: {
         type: Sequelize.DATE,

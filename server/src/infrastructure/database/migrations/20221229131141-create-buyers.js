@@ -90,6 +90,7 @@ module.exports = {
       confirm: {
         type: DataTypes.TINYINT,
         allowNull: true,
+        defaultValue: 1,
       },
       email: {
         type: DataTypes.STRING,

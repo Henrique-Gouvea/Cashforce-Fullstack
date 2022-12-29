@@ -34,6 +34,7 @@ SequelizeOrderportions.init({
   availableToMarket: {
     type: DataTypes.TINYINT,
     allowNull: true,
+    defaultValue: 1,
   },
   orderId: {
     type: DataTypes.INTEGER,
