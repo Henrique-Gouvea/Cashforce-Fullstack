@@ -98,6 +98,11 @@ module.exports = {
       cnpjId: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+          model: 'Cnpjs',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE'
       },
       email: {
         type: DataTypes.STRING,
