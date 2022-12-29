@@ -3,6 +3,7 @@
         "Migrations",
         "Seeders",
         "Routes",
-        "Controller"
+        "Controller",
+        "Service"
     ]
 }

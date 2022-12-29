@@ -1,9 +1,11 @@
 import { Router } from 'express';
-import UserController from '../controllers/userController';
+import NfController from '../controllers/nfController';
+import NfService from '../services/nfService';
 
-const controller = new UserController()
+const nfService = new NfService();
+const nfController = new NfController(nfService)
 const userRoutes = Router()
 
-userRoutes.get('/nfs', controller.listNF);
+userRoutes.get('/nfs', nfController.list);
 
 export default userRoutes;
