@@ -18,6 +18,7 @@ SequelizeCnpjs.init({
   cnpj: {
     type: DataTypes.STRING,
     allowNull: false,
+    unique: true,
   },
   companyType: {
     type: DataTypes.STRING,

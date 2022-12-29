@@ -10,6 +10,7 @@ module.exports = {
       cnpj: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
       },
       companyType: {
         type: DataTypes.STRING,

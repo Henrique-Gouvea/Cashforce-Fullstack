@@ -40,6 +40,7 @@ SequelizeOrders.init({
   orderNfId: {
     type: DataTypes.STRING,
     allowNull: false,
+    unique: true,
   },
   orderNumber: {
     type: DataTypes.STRING,
@@ -48,14 +49,17 @@ SequelizeOrders.init({
   orderPath: {
     type: DataTypes.STRING,
     allowNull: true,
+    unique: true,
   },
   orderFileName: {
     type: DataTypes.STRING,
     allowNull: true,
+    unique: true,
   },
   orderOriginalName: {
     type: DataTypes.STRING,
     allowNull: true,
+    unique: true,
   },
   emissionDate: {
     type: DataTypes.STRING,
