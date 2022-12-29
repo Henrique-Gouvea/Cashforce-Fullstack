@@ -25,7 +25,7 @@ module.exports = {
         cargoPackingList: null,
         deliveryCtrc: null,
         createdAt: '2020-10-30 17:54:18',
-        updateAt: '2020-10-30 17:54:18',
+        updatedAt: '2020-10-30 17:54:18',
       },
       {
         id: 2,
@@ -50,7 +50,7 @@ module.exports = {
         cargoPackingList: null,
         deliveryCtrc: null,
         createdAt: '2020-11-10 18:33:46',
-        updateAt: '2020-11-10 18:33:46',
+        updatedAt: '2020-11-10 18:33:46',
       },
       {
         id: 3,
@@ -75,7 +75,7 @@ module.exports = {
         cargoPackingList: null,
         deliveryCtrc: null,
         createdAt: '2020-11-12 11:42:06',
-        updateAt: '2020-11-18 12:22:14',
+        updatedAt: '2020-11-18 12:22:14',
       }
     ], {}),
 

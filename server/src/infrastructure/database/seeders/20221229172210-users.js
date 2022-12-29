@@ -13,7 +13,7 @@ module.exports = {
         emailChecked: 1,
         cashforceAdm: 1,
         createdAt: '2020-10-01 21:31:37',
-        updateAt: '2020-10-01 22:41:23',
+        updatedAt: '2020-10-01 22:41:23',
       }
     ], {}),
 

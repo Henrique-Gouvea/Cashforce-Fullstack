@@ -30,7 +30,7 @@ module.exports = {
         cnpjId: 2,
         email: null,
         createdAt: '2020-10-29 21:22:21',
-        updateAt: '2020-10-29 21:22:22',
+        updatedAt: '2020-10-29 21:22:22',
       }
     ], {}),
 

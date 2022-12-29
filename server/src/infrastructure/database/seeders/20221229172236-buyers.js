@@ -27,7 +27,7 @@ module.exports = {
         confirm: 1,
         email: null,
         createdAt: '2020-10-29 21:20:33',
-        updateAt: '2020-10-29 21:20:34',
+        updatedAt: '2020-10-29 21:20:34',
       },
     ], {}),
 
