@@ -3,6 +3,7 @@
         "Application",
         "Database",
         "Models",
-        "Interfaces"
+        "Interfaces",
+        "Migrations"
     ]
 }
