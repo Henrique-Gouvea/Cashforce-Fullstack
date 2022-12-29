@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "Migrations",
-        "Seeders"
+        "Seeders",
+        "Routes"
     ]
 }
