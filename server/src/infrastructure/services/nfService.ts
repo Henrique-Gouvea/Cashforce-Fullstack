@@ -11,10 +11,11 @@ export default class NfService implements IService {
     const HARD_TEST_CODE_USER_ID = 1;
     const orders = await SequelizeOrders.findAll({
       where: { userId: HARD_TEST_CODE_USER_ID },
+      attributes: ['orderNfId', 'nNf', 'orderNumber', 'emissionDate', 'value', 'orderStatusBuyer'],
       include: [
         { model: SequelizeBuyers, as: 'buyer', attributes: ['name', 'tradingName'] },
         { model: SequelizeProviders, as: 'provider', attributes: ['name', 'tradingName'] },
-      ]
+      ],
     })
     return orders;
   }
