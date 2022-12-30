@@ -4,6 +4,7 @@
         "Seeders",
         "Routes",
         "Controller",
-        "Service"
+        "Service",
+        "Utils"
     ]
 }
