@@ -6,6 +6,7 @@
         "Interfaces",
         "Migrations",
         "Componts",
-        "Pages"
+        "Pages",
+        "Componentes"
     ]
 }
