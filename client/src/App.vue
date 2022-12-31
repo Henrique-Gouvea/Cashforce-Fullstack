@@ -1,16 +1,17 @@
 <template>
-  <TableGeneric msg="Welcome to Table" />
+  <Nf />
 </template>
 
 <script>
-  import TableGeneric from './components/Table.vue'
+  import Nf from './pages/Nf.vue'
 
   export default {
     name: 'App',
     components: {
-      TableGeneric
+      Nf
     }
   }
+
 </script>
 
 <style>

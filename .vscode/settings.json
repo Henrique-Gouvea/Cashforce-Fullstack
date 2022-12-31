@@ -4,6 +4,7 @@
         "Database",
         "Models",
         "Interfaces",
-        "Migrations"
+        "Migrations",
+        "Componts"
     ]
 }
