@@ -5,6 +5,7 @@
         "Models",
         "Interfaces",
         "Migrations",
-        "Componts"
+        "Componts",
+        "Pages"
     ]
 }
