@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <table className="table">
       <thead clasName="table-header">
         <tr className="table-header-row">
@@ -40,9 +40,20 @@
 
 <style scoped>
   table {
-    width: 60%;
+    /* width: 60%;
+    display: flex;
+    flex-direction: column; */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    height: 214px;
+    left: 0px;
+    top: 176px;
+
   }
 
   thead.table-header {
@@ -53,7 +64,6 @@
   }
 
   tr.table-header-row {
-    justify-content: space-between;
     width: 100%;
     font-style: normal;
     font-weight: 700;
@@ -66,7 +76,14 @@
     color: #bdbbbb;
   }
 
-  tr.table-body-row td {
-    justify-content: space-evenly;
+  tr.table-body-row {
+    box-sizing: border-box;
+    width: 1177px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #DFE2EB;
+    border-radius: 6px;
+    flex: none;
+    flex-grow: 0;
   }
 </style>

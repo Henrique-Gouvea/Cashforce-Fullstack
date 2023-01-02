@@ -23,14 +23,14 @@
 
 <style>
   :root {
-    --sidebar-bg-color: #F6F7FC;
+    --sidebar-bg-color: #FBFDFE;
     --sidebar-options-color: #00ad8c;
   }
 </style>
 
 <style scoped>
   .sidebar {
-    color: white;
+    /* color: white;
     background-color: var(--sidebar-bg-color);
     float: left;
     position: fixed;
@@ -39,7 +39,20 @@
     bottom: 0;
     padding: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
+    position: absolute;
+    width: 18%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+  }
+
+  .svg {
+    width: 160px;
+    height: 30px;
+    left: 24px;
+    top: 25px;
   }
 
   nav {

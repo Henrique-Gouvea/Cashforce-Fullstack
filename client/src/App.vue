@@ -20,7 +20,6 @@
 <style>
   #app {
     margin-top: 30px;
-    background-color: #F6F7FC;
     font-family: 'DM Sans';
     font-style: normal;
   }

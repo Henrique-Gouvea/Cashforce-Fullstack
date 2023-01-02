@@ -4,6 +4,7 @@
 
 <template>
   <div className="pages-nav">
+    <h1> </h1>
     <div className="title-content">
       <HandShakeB />
       <h2>Notas Fiscais</h2>
@@ -47,14 +48,27 @@
 </script>
 
 <style>
+  h1 {
+    border-bottom: 1px solid #DFE2EB;
+    width: 100%;
+    padding: 16px 46px;
+    gap: 10px;
+    height: 2%;
+    left: 0px;
+    top: 0px;
+  }
+
   .pages-nav {
-    position: fixed;
-    background-color: red;
-    padding-left: 48px;
-    padding-top: 70px;
-    padding-right: 47px;
-    margin-left: 20%;
     z-index: 1;
+    position: absolute;
+    width: 82%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(225, 229, 236, 0.5);
+    border-radius: 15px 0px 0px 15px;
   }
 
   .pages-nav h3 {
