@@ -12,14 +12,14 @@
           <td>{{ body?.buyer?.name }}</td>
           <td>{{ body?.provider?.name }}</td>
           <td>{{ body?.emissionDate }}</td>
-          <td className="featured-value">
+          <td className="featured-status-value">
             {{ body?.value }}
           </td>
-          <td className="featured-value bold">
+          <td className="featured-status-value">
             {{ body?.orderStatusBuyer }}
           </td>
           <td className="buyer-data-btn">
-            <button className="btn-cedente">Dados do cedente</button>
+            <span className="btn-cedente">Dados do cedente</span>
           </td>
         </tr>
       </tbody>
@@ -40,50 +40,70 @@
 
 <style scoped>
   table {
-    /* width: 60%;
-    display: flex;
-    flex-direction: column; */
+    width: 93%;
+    margin-left: 3.5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
-    position: absolute;
-    width: 100%;
-    height: 214px;
-    left: 0px;
-    top: 176px;
 
-  }
-
-  thead.table-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
   tr.table-header-row {
-    width: 100%;
+    /* width: 100%; */
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 12px;
     line-height: 16px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     text-transform: uppercase;
     color: #bdbbbb;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  .table-body-row {
+    display: flex;
   }
 
   tr.table-body-row {
     box-sizing: border-box;
-    width: 1177px;
+    /* width: 1177px; */
     height: 48px;
     background: #FFFFFF;
     border: 1px solid #DFE2EB;
     border-radius: 6px;
-    flex: none;
+    /* flex: none; */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    justify-content: space-around;
     flex-grow: 0;
+    margin: 10px;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  .btn-cedente {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    align-items: center;
+    padding: 8px 29px;
+
+    width: 165px;
+    height: 32px;
+    left: 1004px;
+    top: 8px;
+
+    /* P. Blue / 2 */
+
+    border: 1px solid #CAD3FF;
+    border-radius: 24px;
+  }
+
+  .featured-status-value {
+    color: #00ad8c;
   }
 </style>

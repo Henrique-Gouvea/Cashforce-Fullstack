@@ -5,11 +5,13 @@
 <template>
   <div className="pages-nav">
     <h1> </h1>
-    <div className="title-content">
-      <HandShakeB />
-      <h2>Notas Fiscais</h2>
+    <div className="title-subtitle-content">
+      <div className="title-content">
+        <HandShakeB />
+        <h2>Notas Fiscais</h2>
+      </div>
+      <h3>Vizualize as notas fiscais que você tem.</h3>
     </div>
-    <h3>Vizualize as notas fiscais que você tem.</h3>
     <TableGeneric :headerTable="headerTable" :bodyTable="bodyTable" />
   </div>
 </template>
@@ -25,7 +27,7 @@
     },
     data() {
       return {
-        headerTable: ['NOTA FISCAL', 'SACADO', 'CEDENTE', 'EMISSÃO', 'VALOR', 'STATUS', ''],
+        headerTable: ['NOTA FISCAL', 'SACADO', 'CEDENTE', 'EMISSÃO', 'VALOR', 'STATUS', 'DADOS DO CEDENTE'],
         bodyTable: []
       }
     },
@@ -50,7 +52,7 @@
 <style>
   h1 {
     border-bottom: 1px solid #DFE2EB;
-    width: 100%;
+    width: 91%;
     padding: 16px 46px;
     gap: 10px;
     height: 2%;
@@ -90,4 +92,8 @@
     font-size: 24px;
     line-height: 28px;
   }
+
+  /* .title-subtitle-content {
+    position: relative;
+  } */
 </style>
