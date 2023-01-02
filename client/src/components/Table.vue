@@ -1,3 +1,7 @@
+<script setup>
+  import { formatDate, formatMoneyInPtBr } from "../helpers/Converter.js";
+</script>
+
 <template>
   <div>
     <table className="table">
@@ -11,9 +15,9 @@
           <td>{{ body?.nNf }}</td>
           <td>{{ body?.buyer?.name }}</td>
           <td>{{ body?.provider?.name }}</td>
-          <td>{{ body?.emissionDate }}</td>
+          <td>{{ formatDate(body?.emissionDate) }}</td>
           <td className="featured-status-value">
-            {{ body?.value }}
+            {{ formatMoneyInPtBr(body?.value) }}
           </td>
           <td className="featured-status-value">
             {{ body?.orderStatusBuyer }}
