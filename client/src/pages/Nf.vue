@@ -15,7 +15,7 @@
     },
     data() {
       return {
-        headerTable: ['NOTA FISCAL', 'SACADO', 'CEDENTE', 'EMISSÃO', 'VALOR', 'STATUS'],
+        headerTable: ['NOTA FISCAL', 'SACADO', 'CEDENTE', 'EMISSÃO', 'VALOR', 'STATUS', ''],
         bodyTable: []
       }
     },
@@ -25,7 +25,7 @@
     methods: {
       getBody() {
         api
-          .get("/users/nfs")
+          .get("/user/nfs")
           .then((res) => {
             this.bodyTable = res.data;
           })
