@@ -1,24 +1,94 @@
+<script setup>
+  import CashForceLogo from "../../assets/images/logo-cashforce.vue";
+</script>
+
 <template>
-  <div>
-    <b-button v-b-toggle.sidebar-1>Toggle Sidebar</b-button>
-    <b-sidebar id="sidebar-1" title="Sidebar" shadow>
-      <div class="px-3 py-2">
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-          in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        </p>
-        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+  <nav className="sidebar">
+    <CashForceLogo />
+    <div className="options-sidebar">
+      <div className="options-content">
+        <img src="../../assets/icons/hands2.png" alt="hands" class="img-icon-sidebar">
+        <a>Notas fiscais</a>
       </div>
-    </b-sidebar>
-  </div>
+    </div>
+  </nav>
 </template>
 
 <script>
   export default {
-    name: 'Sidebar',
+    name: 'SidebarComponent',
   }
 </script>
 
-<style scoped>
+<style>
+  :root {
+    --sidebar-bg-color: #F6F7FC;
+    --sidebar-options-color: #00ad8c;
+  }
+</style>
 
+<style scoped>
+  .sidebar {
+    color: white;
+    background-color: var(--sidebar-bg-color);
+    float: left;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    background-color: var(--sidebar-bg-color);
+  }
+
+  .options-sidebar {
+    height: 30px;
+    border-left: var(--sidebar-options-color);
+  }
+
+  .options-content:hover {
+    cursor: pointer;
+    color: #354974;
+    border-left: 4px var(--sidebar-options-color) solid;
+  }
+
+
+  .options-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    column-gap: 15px;
+    padding-left: 21px;
+  }
+
+  .options-content a {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--sidebar-options-color);
+  }
+
+  .options-content a:hover {
+    color: #354974;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    margin: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .img-icon-sidebar {
+    width: 30px;
+  }
 </style>

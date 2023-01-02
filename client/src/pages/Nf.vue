@@ -1,7 +1,9 @@
 <template>
-  <h2>Notas Fiscais</h2>
-  <p>Vizualize as notas fiscais que você tem.</p>
-  <TableGeneric :headerTable="headerTable" :bodyTable="bodyTable" />
+  <div className="pages-nav">
+    <h2>Notas Fiscais</h2>
+    <p>Vizualize as notas fiscais que você tem.</p>
+    <TableGeneric :headerTable="headerTable" :bodyTable="bodyTable" />
+  </div>
 </template>
 
 <script>
