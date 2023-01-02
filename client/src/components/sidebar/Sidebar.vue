@@ -1,5 +1,6 @@
 <script setup>
   import CashForceLogo from "../../assets/images/logo-cashforce.vue";
+  import HandShake from "../../assets/icons/HandShake.vue";
 </script>
 
 <template>
@@ -7,7 +8,7 @@
     <CashForceLogo className="logo" />
     <div className="options-sidebar">
       <div className="options-content">
-        <img src="../../assets/icons/hands2.png" alt="hands" class="img-icon-sidebar">
+        <HandShake class="img-icon-sidebar" />
         <a>Notas fiscais</a>
       </div>
     </div>
@@ -53,7 +54,6 @@
 
   .options-content:hover {
     cursor: pointer;
-    color: #354974;
     border-left: 4px var(--sidebar-options-color) solid;
   }
 
