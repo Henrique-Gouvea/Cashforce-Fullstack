@@ -4,7 +4,7 @@
 
 <template>
   <nav className="sidebar">
-    <CashForceLogo />
+    <CashForceLogo className="logo" />
     <div className="options-sidebar">
       <div className="options-content">
         <img src="../../assets/icons/hands2.png" alt="hands" class="img-icon-sidebar">
@@ -33,11 +33,10 @@
     background-color: var(--sidebar-bg-color);
     float: left;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 0.5em;
+    padding: 30px;
     display: flex;
     flex-direction: column;
   }
@@ -58,13 +57,17 @@
     border-left: 4px var(--sidebar-options-color) solid;
   }
 
-
   .options-content {
     display: flex;
     align-items: center;
     height: 100%;
     column-gap: 15px;
-    padding-left: 21px;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  .options-content img {
+    margin-left: 21px;
   }
 
   .options-content a {

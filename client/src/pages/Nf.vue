@@ -40,5 +40,13 @@
 </script>
 
 <style>
-
+  .pages-nav {
+    position: fixed;
+    background-color: red;
+    padding-left: 48px;
+    padding-top: 40px;
+    padding-right: 47px;
+    margin-left: 20%;
+    z-index: 1;
+  }
 </style>
