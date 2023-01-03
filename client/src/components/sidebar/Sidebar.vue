@@ -30,29 +30,11 @@
 
 <style scoped>
   .sidebar {
-    /* color: white;
-    background-color: var(--sidebar-bg-color);
-    float: left;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    padding: 30px;
-    display: flex;
-    flex-direction: column; */
-    position: absolute;
     width: 18%;
     height: 100%;
     left: 0px;
     top: 0px;
 
-  }
-
-  .svg {
-    width: 160px;
-    height: 30px;
-    left: 24px;
-    top: 25px;
   }
 
   nav {
