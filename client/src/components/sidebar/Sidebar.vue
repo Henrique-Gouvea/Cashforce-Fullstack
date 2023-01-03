@@ -59,6 +59,7 @@
     column-gap: 15px;
     padding: 15px;
     margin-top: 30px;
+    left: 0;
   }
 
   .options-content img {
@@ -77,7 +78,6 @@
   }
 
   .options-content a:hover {
-    color: #354974;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
