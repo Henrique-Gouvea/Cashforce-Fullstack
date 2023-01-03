@@ -1,6 +1,7 @@
 <template>
   <Nf />
   <SidebarComponent />
+  <router-view />
 </template>
 
 <script>

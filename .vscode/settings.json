@@ -10,6 +10,7 @@
         "Componentes",
         "Api",
         "Css",
-        "Helpers"
+        "Helpers",
+        "Router"
     ]
 }
