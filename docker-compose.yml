@@ -28,7 +28,7 @@ services:
       - APP_PORT=3001
       - DB_USER=root
       - DB_PASS=root
-      - DB_NAME=cash_force_db
+      - DB_NAME=cashforce_v3
       - DB_HOST=db
       - DB_PORT=3306
       - DIALECT=mysql
