@@ -3,12 +3,13 @@ import { SequelizeOrders } from '../database/models/Orders';
 import { SequelizeBuyers } from '../database/models/Buyers';
 import { SequelizeProviders } from '../database/models/Providers';
 import changeValueForNameStatus from '../utils/statusUtils'
+import { INf } from '../interfaces/INf';
 
-export default class NfService implements IService {
+export default class NfService implements IService<INf | INf[]> {
   constructor(
   ) { }
 
-  async list(): Promise<any> {
+  async list(): Promise<INf[]> {
     const HARD_TEST_CODE_USER_ID = 1;
     const nfArray = await SequelizeOrders.findAll({
       where: { userId: HARD_TEST_CODE_USER_ID },

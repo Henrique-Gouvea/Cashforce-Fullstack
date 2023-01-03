@@ -1,3 +1,3 @@
-export interface IService {
-    list(): Promise<any>
+export interface IService<T> {
+    list(): Promise<T[]>
 }
