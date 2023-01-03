@@ -28,11 +28,19 @@
         </tr>
       </tbody>
     </table>
+    <PopUp>
+      <h2>Dados do Cedente</h2>
+      <p>Nome: {{ body?.buyer?.name }}</p>
+      <p>Nome: {{ body?.buyer?.name }}</p>
+      <p>Nome: {{ body?.buyer?.name }}</p>
+    </PopUp>
   </div>
 
 </template>
 
 <script>
+  import PopUp from './Popup.vue';
+
   export default {
     name: 'TableGeneric',
     props: {

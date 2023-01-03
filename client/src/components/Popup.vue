@@ -11,11 +11,12 @@
 
 <script>
   export default {
+    name: 'PopUp',
     props: ['ChangePopup']
   }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
   .popup {
     position: fixed;
     top: 0;
@@ -27,10 +28,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
 
-    .popup-inner {
-      background: #FFF;
-      padding: 32px;
-    }
+  .popup-inner {
+    background: #FFF;
+    padding: 30px;
   }
 </style>
