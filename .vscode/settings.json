@@ -12,6 +12,7 @@
         "Css",
         "Helpers",
         "Router",
-        "Docker"
+        "Docker",
+        "Controller"
     ]
 }
