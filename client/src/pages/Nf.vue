@@ -5,14 +5,16 @@
 <template>
   <div className="pages-nav">
     <h1> </h1>
-    <div className="title-subtitle-content">
-      <div className="title-content">
-        <HandShakeB />
-        <h2>Notas Fiscais</h2>
+    <div className="title-table-content">
+      <div className="title-subtitle-content">
+        <div className="title-content">
+          <HandShakeB />
+          <h2>Notas Fiscais</h2>
+        </div>
+        <h3>Vizualize as notas fiscais que você tem.</h3>
       </div>
-      <h3>Vizualize as notas fiscais que você tem.</h3>
+      <TableGeneric :headerTable="headerTable" :bodyTable="bodyTable" />
     </div>
-    <TableGeneric :headerTable="headerTable" :bodyTable="bodyTable" />
   </div>
 </template>
 
@@ -63,6 +65,7 @@
   .pages-nav {
     z-index: 1;
     position: absolute;
+    margin-left: 3.5%;
     width: 82%;
     height: 100%;
     right: 0px;
@@ -78,6 +81,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .title-table-content {
+    margin-left: 3.5%;
   }
 
   .title-content {

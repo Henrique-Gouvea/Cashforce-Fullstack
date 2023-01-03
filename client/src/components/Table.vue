@@ -45,7 +45,6 @@
 <style scoped>
   table {
     width: 93%;
-    margin-left: 3.5%;
     display: flex;
     flex-direction: column;
 
