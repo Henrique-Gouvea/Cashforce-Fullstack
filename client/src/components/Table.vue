@@ -1,7 +1,3 @@
-<script setup>
-  import { formatDate, formatMoneyInPtBr } from "../helpers/Converter.js";
-</script>
-
 <template>
   <div>
     <table className="table">
@@ -23,29 +19,47 @@
             {{ body?.orderStatusBuyer }}
           </td>
           <td className="buyer-data-btn">
-            <span className="btn-cedente">Dados do cedente</span>
+            <span @click="() => ChangePopup('buttonTrigger')" className="btn-cedente">Dados do cedente</span>
           </td>
+          <PopUp v-if="popupTriggers.buttonTrigger" :TogglePopup="() => ChangePopup('buttonTrigger')">
+            <h2>Dados do Cedente</h2>
+            <p>Nome: {{ body?.provider?.name }}</p>
+            <p>Nome Comercial: {{ body?.provider?.tradingName }}</p>
+            <p>E-mail: {{ body?.provider?.responsibleEmail }}</p>
+            <p>Telefone: {{ body?.provider?.phoneNumber }}</p>
+          </PopUp>
         </tr>
       </tbody>
     </table>
-    <PopUp>
-      <h2>Dados do Cedente</h2>
-      <p>Nome: {{ body?.buyer?.name }}</p>
-      <p>Nome: {{ body?.buyer?.name }}</p>
-      <p>Nome: {{ body?.buyer?.name }}</p>
-    </PopUp>
   </div>
 
 </template>
 
 <script>
+  import { formatDate, formatMoneyInPtBr } from "../helpers/Converter.js";
   import PopUp from './Popup.vue';
+  import { ref } from 'vue';
 
   export default {
     name: 'TableGeneric',
     props: {
       headerTable: Array,
       bodyTable: Array
+    },
+    setup() {
+      const popupTriggers = ref({
+        buttonTrigger: false,
+      });
+      const ChangePopup = (trigger) => {
+        popupTriggers.value[trigger] = !popupTriggers.value[trigger]
+      }
+      return {
+        PopUp,
+        popupTriggers,
+        ChangePopup,
+        formatDate,
+        formatMoneyInPtBr
+      }
     }
   }
 </script>
@@ -55,7 +69,6 @@
     width: 93%;
     display: flex;
     flex-direction: column;
-
   }
 
   tr.table-header-row {
