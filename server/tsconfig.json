@@ -5,6 +5,11 @@
     "module": "commonjs",
     "rootDir": "./src",
     "outDir": "./build",
+    "types": [
+      "node",
+      "jest",
+      "express"
+    ],
     "preserveConstEnums": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
