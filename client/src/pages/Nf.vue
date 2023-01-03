@@ -81,6 +81,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    margin-bottom: 30px;
   }
 
   .title-table-content {
@@ -95,12 +96,8 @@
   }
 
   .title-content h2 {
-    font-weight: 700;
+    margin: 0;
+    margin-left: 10px;
     font-size: 24px;
-    line-height: 28px;
   }
-
-  /* .title-subtitle-content {
-    position: relative;
-  } */
 </style>
