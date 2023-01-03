@@ -19,25 +19,29 @@
             {{ body?.orderStatusBuyer }}
           </td>
           <td className="buyer-data-btn">
-            <span @click="() => ChangePopup('buttonTrigger')" className="btn-cedente">Dados do cedente</span>
+            <span
+              @click="() => updateData(body?.provider?.name, body?.provider?.tradingName,body?.provider?.responsibleEmail, body?.provider?.phoneNumber)"
+              className="btn-cedente">Dados do
+              cedente</span>
           </td>
-          <PopUp v-if="popupTriggers.buttonTrigger" :TogglePopup="() => ChangePopup('buttonTrigger')">
-            <h2>Dados do Cedente</h2>
-            <p>Nome: {{ body?.provider?.name }}</p>
-            <p>Nome Comercial: {{ body?.provider?.tradingName }}</p>
-            <p>E-mail: {{ body?.provider?.responsibleEmail }}</p>
-            <p>Telefone: {{ body?.provider?.phoneNumber }}</p>
-          </PopUp>
         </tr>
       </tbody>
     </table>
+    <PopUp v-if="popupTriggers.buttonTrigger" :ChangePopup="() => ChangePopup('buttonTrigger')">
+      <h2>Dados do Cedente</h2>
+      <p>Nome: {{ NameProvider }}</p>
+      <p>Nome Comercial: {{ TradingName }}</p>
+      <p>E-mail: {{ ResponsibleEmail }}</p>
+      <p>Telefone: {{ PhoneNumber }}</p>
+    </PopUp>
+    <PopUp />
   </div>
 
 </template>
 
 <script>
   import { formatDate, formatMoneyInPtBr } from "../helpers/Converter.js";
-  import PopUp from './Popup.vue';
+  import PopUp from './PopUp';
   import { ref } from 'vue';
 
   export default {
@@ -45,6 +49,21 @@
     props: {
       headerTable: Array,
       bodyTable: Array
+    },
+    data: () => ({
+      NameProvider: '',
+      TradingName: '',
+      ResponsibleEmail: '',
+      PhoneNumber: '',
+    }),
+    methods: {
+      updateData: function (name, tradingName, responsibleEmail, phoneNumber) {
+        this.NameProvider = name
+        this.TradingName = tradingName
+        this.ResponsibleEmail = responsibleEmail
+        this.PhoneNumber = phoneNumber
+        this.ChangePopup('buttonTrigger')
+      },
     },
     setup() {
       const popupTriggers = ref({
@@ -58,7 +77,7 @@
         popupTriggers,
         ChangePopup,
         formatDate,
-        formatMoneyInPtBr
+        formatMoneyInPtBr,
       }
     }
   }

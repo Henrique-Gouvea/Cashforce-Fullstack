@@ -32,6 +32,6 @@
 
   .popup-inner {
     background: #FFF;
-    padding: 30px;
+    padding: 32px;
   }
 </style>
