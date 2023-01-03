@@ -98,6 +98,11 @@
     border-radius: 24px;
   }
 
+  .btn-cedente:hover {
+    cursor: pointer;
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.048);
+  }
+
   .featured-status-value {
     color: #00ad8c;
   }
