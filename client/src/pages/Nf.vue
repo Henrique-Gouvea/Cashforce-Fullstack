@@ -27,7 +27,7 @@
     },
     data() {
       return {
-        headerTable: ['NOTA FISCAL', 'SACADO', 'CEDENTE', 'EMISSÃO', 'VALOR', 'STATUS', 'DADOS DO CEDENTE'],
+        headerTable: ['NOTA FISCAL', 'SACADO', 'CEDENTE', 'EMISSÃO', 'VALOR', 'STATUS', ''],
         bodyTable: []
       }
     },

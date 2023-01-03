@@ -52,14 +52,12 @@
   }
 
   tr.table-header-row {
-    /* width: 100%; */
+    width: 80%;
     font-style: normal;
-    /* font-weight: 700; */
     font-size: 12px;
     line-height: 16px;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     text-transform: uppercase;
     color: #bdbbbb;
     justify-content: space-between;
@@ -73,36 +71,30 @@
 
   tr.table-body-row {
     box-sizing: border-box;
-    /* width: 1177px; */
     height: 48px;
     background: #FFFFFF;
     border: 1px solid #DFE2EB;
     border-radius: 6px;
-    /* flex: none; */
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     justify-content: space-around;
     flex-grow: 0;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     vertical-align: middle;
     align-items: center;
   }
 
   .btn-cedente {
+    color: #727D94;
     box-sizing: border-box;
-
-    /* Auto layout */
     align-items: center;
     padding: 8px 29px;
-
-    width: 165px;
-    height: 32px;
+    width: 107px;
+    height: 16px;
     left: 1004px;
     top: 8px;
-
-    /* P. Blue / 2 */
-
     border: 1px solid #CAD3FF;
     border-radius: 24px;
   }
