@@ -86,7 +86,8 @@ A aplicação será aberta na porta:8080 - acesse http://localhost:8080
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-<strong>Backend</strong>
+<details>
+<summary><strong>Backend</strong></summary><br />
 
 -   **[TypeScript]**
 -   **[Node.js]**
@@ -99,15 +100,17 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[CHAI]**
 -   **[SINON]**
 -   **[HELMET]**
+</details>
 
-<strong>Frontend</strong>
+<details>
+<summary><strong>Frontend</strong></summary><br />
 
 -   **[Vue]**
 -   **[Vue Router]**
 -   **[EsLint]**
 -   **[Axios]**
 -   **[Bootstrap]**
-
+</details>
 ---
 
 ## Endpoint para cadastro do usuario
