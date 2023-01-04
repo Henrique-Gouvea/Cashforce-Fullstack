@@ -12,7 +12,10 @@
 ## 💻 Sobre o projeto
 
 Nesse projeto o objetivo foi desenvolver uma pagina frontend e mostrar todas as notas fiscais do usuario, disponibilizado pelo backend acessando o DB.
-Imagem final da página:
+No frontend foi utilizado o Vue, e no backend Typescript:
+
+
+Imagem de como ficou no final a página:
 
 <img src="assets/cashforce-image-end.jpg" alt="Aplicação web" style="max-width: 100%;">
 
