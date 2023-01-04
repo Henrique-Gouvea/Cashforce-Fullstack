@@ -114,80 +114,32 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </details>
 ---
 
-## Endpoints
+## 🛠 Endpoints
 
-- O endpoint acessível através do caminho POST(`/user/cadaster`).
+- O endpoint acessível através do caminho get(`/user/nfs`).
 
-- A rota deve receber os campos `username` e `password`.
 
-- O endpoint recebe a estrutura abaixo e retorna como resposta um token:
+- A rota retorna os dados necessarios para preenchimento da Nota Fiscal:
 ```json
-  {
-    "username": "string",
-    "password": "string"
+{
+  orderNfId: string,
+  nNf: string,
+  orderNumber: string,
+  emissionDate: string,
+  value: string,
+  orderStatusBuyer: string,
+  buyer: {
+    name: string,
+    tradingName: string
+  },
+  provider: {
+    name: string,
+    tradingName: string,
+    responsibleEmail: string,
+    phoneNumber: string
   }
+}
 ```
 
----
 
-## O endpoint para login de usuario;
 
-- O endpoint acessível através do caminho POST(`/user/login`);
-- 
-- O endpoint recebe a estrutura abaixo e retorna como resposta um token:
-```json
-   {
-    "username": "string",
-    "password": "string"
-   }
-```
-
----
-
-# Todos os EndPoins abaixo necessitam do Token na requisição
-
----
-
-## O endpoint traz o balanço do usuario;
-
-- O endpoint acessível através do caminho GET(`/user/balance`);
-
-Retorna o balanço do usuario logado.
-
----
-
-## Rota Transactions
-
----
-
-## O endpoint traz as transações do usuario
-
-- O endpoint acessível através do caminho GET(`/transactions`);
-
-Retorna todas as transações em que o usuario participou.
-
----
-
-## O endpoint é capaz de criar uma transação para um usuario especifico;
-
-- O endpoint deve ser acessível através do caminho POST(`/transactions`);
-```json
-   {
-    "username": "string",
-    "cashOutValue": "number"
-   }
-```
-
----
-## O endpoint filtra as transações do usuario saida, entrada e data;
-
-- O endpoint deve ser acessível através do caminho POST(`/transactions`);
-```json
-   {
-    "cashOut": "boolean",
-    "cashIn": "boolean",
-    "date": "string"
-   }
-```
-
----
