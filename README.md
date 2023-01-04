@@ -119,7 +119,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <details>
 <summary><strong>User</strong></summary><br />
    
-- O endpoint acessível através do caminho GRT(`/user/nfs`).
+- O endpoint acessível através do caminho GET(`/user/nfs`).
 
 
 - A rota retorna os dados necessarios para preenchimento da Nota Fiscal:
