@@ -88,13 +88,25 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <strong>Backend</strong>
 
--   **[TypeScript](https://github.com/microsoft/TypeScript)**
--   **[Node.js](https://github.com/nodejs/node)**
--   **[Sequelize](https://github.com/sequelize/sequelize)**
--   **[EsLint](https://github.com/eslint/eslint)**
--   **[Express](https://github.com/expressjs/express)**
--   **[MySQL](https://github.com/mysql)**
+-   **[TypeScript]**
+-   **[Node.js]**
+-   **[Sequelize]**
+-   **[EsLint]**
+-   **[Express]**
+-   **[MySQL]**
 -   **[CORS]**
+-   **[JEST]**
+-   **[CHAI]**
+-   **[SINON]**
+-   **[HELMET]**
+
+<strong>Frontend</strong>
+
+-   **[Vue]**
+-   **[Vue Router]**
+-   **[EsLint]**
+-   **[Axios]**
+-   **[Bootstrap]**
 
 ---
 
