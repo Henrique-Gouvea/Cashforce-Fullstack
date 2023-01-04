@@ -16,7 +16,7 @@ Nesse projeto o objetivo foi desenvolver uma pagina frontend e mostrar todas as 
 No frontend foi utilizado o Vue, e no backend Typescript:
 
 
-Imagem de como ficou no final a página:
+Imagem de como ficou a página finalizada:
 
 <img src="assets/cashforce-image-end.jpg" alt="Aplicação web" style="max-width: 100%;">
 
