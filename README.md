@@ -86,16 +86,15 @@ A aplicação será aberta na porta:8080 - acesse http://localhost:8080
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
+<strong>Backend</strong>
+
 -   **[TypeScript](https://github.com/microsoft/TypeScript)**
 -   **[Node.js](https://github.com/nodejs/node)**
 -   **[Sequelize](https://github.com/sequelize/sequelize)**
 -   **[EsLint](https://github.com/eslint/eslint)**
 -   **[Express](https://github.com/expressjs/express)**
--   **[PostgreSQL](https://github.com/postgres)**
--   **[JSON-WebToken](https://github.com/auth0/node-jsonwebtoken)**
--   **[Nodemon](https://github.com/remy/nodemon)**
--   **[Joi](https://github.com/hapijs/joi)**
--   **[BCrypt](https://www.npmjs.com/package/bcrypt)**
+-   **[MySQL](https://github.com/mysql)**
+-   **[CORS]**
 
 ---
 
