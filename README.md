@@ -11,25 +11,20 @@
 
 ## 💻 Sobre o projeto
 
-Nesse projeto o objetivo foi desenvolver uma pagina frontend(Utilizando Vue) e mostrar todas as notas fiscais do usuario, disponibilizado pelo backend(Utilizado Typescript) acessando o DB.
+Nesse projeto o objetivo foi desenvolver uma pagina frontend e mostrar todas as notas fiscais do usuario, disponibilizado pelo backend acessando o DB.
+Imagem final da página:
 
 <img src="assets/cashforce-image-end.jpg" alt="Aplicação web" style="max-width: 100%;">
 
 
 ## 🚀 Como executar o projeto
 
-Clonar o repositorio:
-
-SSH: git@github.com:Henrique-Gouvea/Cashforce-Fullstack.git
-
-HTTPs: https://github.com/Henrique-Gouvea/Cashforce-Fullstack.git
-
-GitHub CLI: gh repo clone Henrique-Gouvea/Cashforce-Fullstack
+Clonar o repositorio.
 
 
-Entrar na pasta backend
+Rodando localmente:
 
-Rodando Localmente:
+BackEnd(Porta 3001) - Entrar na pasta server
 
   Criar um arquivo .env na raiz do projeto(passar as variaveis de ambiente especificadas em .env.example)
 
@@ -37,13 +32,23 @@ Rodando Localmente:
 
     - npm install
 
-    - npm run init
+    - npm run start
+    
+    Caso Banco não esteja criado e alimentado pode utilizar o comando:
+    - npm run prestart(Fara a criação do banco de dados,migrations e alimentação do banco)
+    
+FrontEnd(Porta 8080) - Entrar na pasta client
+
+    Executar os comandos:
+
+    - npm install
 
     - npm run start
-
-
+    
+Após isso ele estara rodando em http://localhost:8080/     
+    
 Rodando pelo Docker:
-  Executar os comandos:
+  Na pasta raiz executar o comandos:
 
     - docker-compose up
 
