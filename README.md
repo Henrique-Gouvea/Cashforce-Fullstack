@@ -116,12 +116,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🛠 Endpoints
 
-- O endpoint acessível através do caminho get(`/user/nfs`).
+<details>
+<summary><strong>User</strong></summary><br />
+   
+- O endpoint acessível através do caminho GRT(`/user/nfs`).
 
 
 - A rota retorna os dados necessarios para preenchimento da Nota Fiscal:
 ```json
-{
+
   orderNfId: string,
   nNf: string,
   orderNumber: string,
@@ -138,8 +141,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
     responsibleEmail: string,
     phoneNumber: string
   }
-}
-```
 
+```
+</details>
 
 
