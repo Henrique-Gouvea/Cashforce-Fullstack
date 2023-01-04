@@ -123,8 +123,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 - A rota retorna os dados necessarios para preenchimento da Nota Fiscal:
+   
 ```json
-
+   
+{
   orderNfId: string,
   nNf: string,
   orderNumber: string,
@@ -141,6 +143,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
     responsibleEmail: string,
     phoneNumber: string
   }
+}
 
 ```
 </details>
