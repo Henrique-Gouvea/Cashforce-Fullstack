@@ -44,37 +44,11 @@ FrontEnd(Porta 8080) - Entrar na pasta client
     - npm install
 
     - npm run start
-    
-Após isso ele estara rodando em http://localhost:8080/    
 
 </details>
-Rodando localmente:
 
-BackEnd(Porta 3001) - Entrar na pasta server
-
-  Criar um arquivo .env na raiz do projeto(passar as variaveis de ambiente especificadas em .env.example)
-
-    Executar os comandos:
-
-    - npm install
-
-    - npm run start
-    
-    Caso Banco não esteja criado e alimentado pode utilizar o comando:
-    - npm run prestart(Fara a criação do banco de dados,migrations e alimentação do banco)
-    
-FrontEnd(Porta 8080) - Entrar na pasta client
-
-    Executar os comandos:
-
-    - npm install
-
-    - npm run start
-    
-Após isso ele estara rodando em http://localhost:8080/     
-    
-Rodando pelo Docker:
-  Na pasta raiz executar o comandos:
+<details>
+<summary><strong>Rodando pelo Docker-compose:</strong></summary><br />
 
     - docker-compose up
 
@@ -86,9 +60,9 @@ Rodando pelo Docker:
 
     - npm run start (Se o app não tiver inicializado)
 
+</details>
 
-
-A aplicação será aberta na porta:3001 - acesse http://localhost:3001
+A aplicação será aberta na porta:8080 - acesse http://localhost:8080
 
 
 ## 🛠 Tecnologias
