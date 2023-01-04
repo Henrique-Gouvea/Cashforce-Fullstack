@@ -24,9 +24,11 @@ Clonar o repositorio.
 <details>
 <summary><strong>Rodando localmente:</strong></summary><br />
 
-BackEnd(Porta 3001) - Entrar na pasta server
+<strong>BackEnd(Porta 3001)</strong>
+   
+  - Entrar na pasta server
 
-  Criar um arquivo .env na raiz do projeto(passar as variaveis de ambiente especificadas em .env.example)
+  - Criar um arquivo .env na raiz do projeto(passar as variaveis de ambiente especificadas em .env.example)
 
     Executar os comandos:
 
@@ -37,9 +39,11 @@ BackEnd(Porta 3001) - Entrar na pasta server
     Caso Banco não esteja criado e alimentado pode utilizar o comando:
     - npm run prestart(Fara a criação do banco de dados,migrations e alimentação do banco)
     
-FrontEnd(Porta 8080) - Entrar na pasta client
+<strong>FrontEnd(Porta 8080)</strong>
 
-    Executar os comandos:
+   - Entrar na pasta client
+
+   Executar os comandos:
 
     - npm install
 
@@ -49,16 +53,26 @@ FrontEnd(Porta 8080) - Entrar na pasta client
 
 <details>
 <summary><strong>Rodando pelo Docker-compose:</strong></summary><br />
-
+   Na pasta raiz executar o comando:
+   
     - docker-compose up
 
-    - docker exec -it app_backend bash
+   Nesse momento tanto o front quanto o back devem estar rodando normalmente
+   Caso não ocorra de os seguintes comandos:
+
+    - docker exec -it app_server bash
 
     - npm install
 
-    - npm run init
+    - npm run start
 
-    - npm run start (Se o app não tiver inicializado)
+    Abra outro terminal e de os comandos:
+   
+    - docker exec -it app_client bash
+
+    - npm install
+
+    - npm run start
 
 </details>
 
