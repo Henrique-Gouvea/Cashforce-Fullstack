@@ -6,6 +6,7 @@
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-como-executar-o-projeto">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-endpoints">BackEnd(EndPoints)</a> 
 </p>
 
 
@@ -113,7 +114,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </details>
 ---
 
-## Endpoint para cadastro do usuario
+## Endpoints
 
 - O endpoint acessível através do caminho POST(`/user/cadaster`).
 
