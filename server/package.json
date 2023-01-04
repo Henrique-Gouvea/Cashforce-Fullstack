@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev ./src/application/server.ts",
     "build": "npx tsc",
-    "start": "npm run build && nodemon ./build/server.js",
+    "start": "npm run build && node ./build/application/server.js",
     "prestart": "npm run build && npm run db:reset",
     "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "test": "ts-mocha __tests__/*.test.ts --exit"
